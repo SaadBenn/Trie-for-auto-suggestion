@@ -25,5 +25,5 @@ class Node:
         return self._is_word_finished
 
     @property
-    def get_count(self):
-        return self._count
+    def increment_count(self):
+        self._count += 1
