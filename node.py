@@ -11,3 +11,19 @@ class Node:
         # How many times this character appeared in the addition process
         self._count = 1
 
+# Getters for the instance private variables, maintaining integrity + following encapsulation
+    @property
+    def get_char(self):
+        return self._char
+
+    @property
+    def get_children(self):
+        return self._children
+
+    @property
+    def get_word_finished(self):
+        return self._is_word_finished
+
+    @property
+    def get_count(self):
+        return self._count
