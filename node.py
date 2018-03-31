@@ -27,3 +27,7 @@ class Node:
     @property
     def increment_count(self):
         self._count += 1
+
+    @property
+    def get_count(self):
+        return self._count
