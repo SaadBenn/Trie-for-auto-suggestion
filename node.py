@@ -21,8 +21,15 @@ class Node:
         return self._children
 
     @property
-    def get_word_finished(self):
+    def is_word_finished(self):
         return self._is_word_finished
+
+    @is_word_finished.setter
+    def is_word_finished(self, value):
+        if type(value) == bool:  # type checking for value property
+            self._is_word_finished = value
+        else:
+            raise Exception("Invalid value!")
 
     @property
     def increment_count(self):
