@@ -1,4 +1,4 @@
-import Trie
+from Trie import Trie
 
 
 def main():
